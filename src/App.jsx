@@ -1,15 +1,10 @@
-
-import emailjs from '@emailjs/browser'
 import './App.css'
 
 function App() {
 
   function enviarCorreo(e) {
     e.preventDefault()
-
-    emailjs.sendForm('TU_SERVICE_ID', 'TU_TEMPLATE_ID', e.target, 'TU_PUBLIC_KEY')
-      .then(() => alert('Mensaje enviado'))
-      .catch(() => alert('Error al enviar'))
+    window.location.href = 'mailto:vaninaorellana89@gmail.com'
   }
 
   return (
